@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Studio - Web Design and Videography</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Main CSS -->
+    <link href="styles/styles.css" rel="stylesheet">
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <div class="header-top">
+        <img src="images/pcstudio_logo.svg" alt="PC Studio logo" class="logo">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="works.html">works</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="hero-text-box">
+        <h1>Welcome to PC Studio<br><span>Design & Videography</span></h1>
+        <a href="#" class="btn btn-full">Book consultation</a>
+        <a href="works.html" class="btn btn-inverse">Works</a>
+    </div>
+    <!-- Bootstrap Carousel -->
+    <div id="headerCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/prikol1.jpg" class="d-block w-100" alt="Carousel Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/prikol2.jpg" class="d-block w-100" alt="Carousel Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/prikol3.jpg" class="d-block w-100" alt="Carousel Image 3">
+            </div>
+            <div class="carousel-item">
+                <img src="images/prikol4.jpg" class="d-block w-100" alt="Carousel Image 4">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#headerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#headerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</header>
+
+<!-- SECTION FEATURED -->
+<section class="section-featured py-5">
+    <div class="container text-center">
+        <h1 class="mb-4 text-white">CORE VALUES</h1>
+        <p class="mb-5 text-white">Our business is a place where dreams come true, so we adhere to the basic rules that help to
+            leave every client satisfied.</p>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fa-solid fa-newspaper fa-3x mb-3"></i>
+                        <h2 class="card-title text-white">Attentiveness</h2>
+                        <p class="card-text text-white">We value every project and approach it with maximum dedication, paying
+                            attention to even the smallest details to create a product that exactly meets the client's
+                            expectations.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fa-solid fa-magnifying-glass fa-3x mb-3"></i>
+                        <h2 class="card-title text-white">Understanding</h2>
+                        <p class="card-text text-white">In our studio, dialogue with the client is important, we strive to
+                            understand their needs and ideas in order to offer solutions that best reflect their values
+                            and goals.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fa-solid fa-gear fa-3x mb-3"></i>
+                        <h2 class="card-title text-white">Openness</h2>
+                        <p class="card-text text-white">We encourage honesty and transparency in relationships both within the team
+                            and with clients, are always open to new ideas and ready for constructive criticism.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION PORTFOLIO -->
+<section class="section-portfolio py-5">
+<!--    <div class="container">-->
+        <h1 class="mb-4 text-center text-white">Studio Works</h1>
+        <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/1.jpg" class="d-block img-fluid mx-auto" alt="Coke OOH Campaign">
+                    <div class="carousel-caption">
+                        COKE & JACK DANIELS OOH CAMPAIGN
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/2.jpg" class="d-block img-fluid mx-auto" alt="Point Bike Brand Design">
+                    <div class="carousel-caption">
+                        POINT BIKE BRAND DESIGN
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/3.jpg" class="d-block img-fluid mx-auto" alt="Event Design">
+                    <div class="carousel-caption">
+                        ARCTERYX GRAPHIC STANDART DESIGN
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/4.jpg" class="d-block img-fluid mx-auto" alt="George Olden Museum Guide">
+                    <div class="carousel-caption">
+                        DRIVE TITLE SEQUENCE 
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/5.jpg" class="d-block img-fluid mx-auto" alt="Album Cover">
+                    <div class="carousel-caption">
+                        BRUTALIST.CO MAGAZINE DESIGN
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/6.jpg" class="d-block img-fluid mx-auto" alt="Some description">
+                    <div class="carousel-caption">
+                        BRUTALIST.CO WEBSITE DEVELOPMENT
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <a href="works.html" class="btn btn-full">See all works</a>
+<!--    </div>-->
+</section>
+
+<!-- SECTION TESTIMONIALS -->
+<section class="section-testimonials py-5 bg-light">
+    <div class="container">
+        <h1 class="text-center mb-4">Our Latest Reviews</h1>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <p>Working with PC Studio was a great experience! I really wanted a nice design for my small
+                                business. The website design met all our expectations - it is modern, user-friendly and
+                                visually appealing. The team listened carefully to our wishes and offered several
+                                creative solutions that perfectly suited our brand. All stages of work were transparent,
+                                and deadlines were met without delays. We recommend this Studio for their
+                                professionalism and attention to detail! I can wait to work with this wonderful studio
+                                again soon.</p>
+                            <footer class="blockquote-footer mt-2">
+                                <img src="images/student1.png" alt="Kayla Redcliff" class="rounded-circle me-2"
+                                     style="width: 40px;">
+                                Kayla Redcliff
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <p>Working with your studio was a fantastic experience! The design for our concert exceeded
+                                all our expectations – it was modern, vibrant, and perfectly captured the event's
+                                atmosphere. The team listened attentively to our wishes and proposed several creative
+                                solutions that were a perfect fit for our concert. Every stage of the process was
+                                well-organized, and the deadlines were met without any delays. We highly recommend your
+                                studio for your professionalism and attention to every detail!</p>
+                            <footer class="blockquote-footer mt-2">
+                                <img src="images/student2.png" alt="Sam Stathame" class="rounded-circle me-2"
+                                     style="width: 40px;">
+                                Sam Stathame
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <p>Working with your studio on our fragrance advertisement video was a wonderful experience!
+                                The final product exceeded all our expectations – it was visually stunning, elegant, and
+                                perfectly captured the essence of our brand. The team carefully listened to our ideas
+                                and offered creative suggestions that enhanced the concept. Every step of the project
+                                was well-managed, and the deadlines were respected without any delays. We highly
+                                recommend your studio for its professionalism, creativity, and attention to detail!</p>
+                            <footer class="blockquote-footer mt-2">
+                                <img src="images/student3.png" alt="James Shutliv" class="rounded-circle me-2"
+                                     style="width: 40px;">
+                                James Shutliv
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION STEPS -->
+<section class="section-steps py-5">
+    <div class="container">
+        <h1 class="text-center mb-4 text-white">TRY OUR NEW APP</h1>
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center mb-4 mb-md-0">
+                <img src="images/app-phone.png" alt="GBC app" class="img-fluid app-screen">
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex align-items-start mb-3">
+                    <span class="badge bg-primary rounded-circle me-3"
+                          style="width: 40px; height: 40px; line-height: 40px; font-size: 1.2rem; display: flex; justify-content: center; align-items: center;">1</span>
+                    <p class="text-white">Find out about the latest studio news, latest works and vacancies!</p>
+                </div>
+                <div class="d-flex align-items-start mb-3">
+                    <span class="badge bg-primary rounded-circle me-3"
+                          style="width: 40px; height: 40px; line-height: 40px; font-size: 1.2rem; display: flex; justify-content: center; align-items: center;">2</span>
+                    <p class="text-white">Read interesting blogs about design, from our studio and friends.</p>
+                </div>
+                <div class="d-flex align-items-start mb-3">
+                    <span class="badge bg-primary rounded-circle me-3"
+                          style="width: 40px; height: 40px; line-height: 40px; font-size: 1.2rem; display: flex; justify-content: center; align-items: center;">3</span>
+                    <p class="text-white">Participate in the life of the company, receive prizes.</p>
+                </div>
+                <div class="mt-4">
+                    <a href="#" class="btn-app me-2"><img src="images/download-app-iphone.png" alt="Download on iPhone"></a>
+                    <a href="#" class="btn-app"><img src="images/download-app-android.png"
+                                                     alt="Download on Android"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION CAMPUS -->
+<section class="section-campus py-5">
+    <div class="container">
+        <h1 class="text-center mb-4">VISIT OUR STORE & STUDIO</h1>
+        <div class="row g-4">
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100">
+                    <img src="images/moscow.jpg" class="card-img-top" alt="Moscow Studio">
+                    <div class="card-body">
+                        <h2 class="card-title"><i class="fa-sharp fa-solid fa-location-dot me-2"></i>Moscow, Russia</h2>
+                        <p class="card-text">Moscow studio, the largest of our locations. It has not only a studio and a
+                            store of our merch, but also an art space for independent artists. The studio accepts orders
+                            from central Russia and Eastern Europe.</p>
+                        <p class="card-text">7 Street of 1905 year, building 1.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100">
+                    <img src="images/toronto.jpg" class="card-img-top" alt="Toronto Studio">
+                    <div class="card-body">
+                        <h2 class="card-title"><i class="fa-sharp fa-solid fa-location-dot me-2"></i>Toronto, Ontario
+                        </h2>
+                        <p class="card-text">Our youngest studio, working in the North American region. Here, you can
+                            discuss your ideas and projects live, as well as buy our merch.</p>
+                        <p class="card-text">99 Broadway Ave.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100">
+                    <img src="images/izhkar.jpg" class="card-img-top" alt="Izhkar Studio">
+                    <div class="card-body">
+                        <h2 class="card-title"><i class="fa-sharp fa-solid fa-location-dot me-2"></i>Izhkar, Udmurtia
+                        </h2>
+                        <p class="card-text">The studio in the capital of the Udmurt Republic is our headquarters and
+                            heart, it is there that we began as a whole structure. This studio is responsible for the
+                            Asian region, and is also the main store of our products, responsible for online sales.</p>
+                        <p class="card-text">34 Sovetskya Street.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100">
+                    <img src="images/belgrade.jpg" class="card-img-top" alt="Belgrade Studio">
+                    <div class="card-body">
+                        <h2 class="card-title"><i class="fa-sharp fa-solid fa-location-dot me-2"></i>Belgrade, Serbia
+                        </h2>
+                        <p class="card-text">The Serbian Studio is the Western European department of our studio, where
+                            the best specialists from Serbia and Europe in the field of design work. Our Coffee Menu is
+                            available as an experiment, making a visit to our studio not only productive, but also
+                            delicious.</p>
+                        <p class="card-text">Palilula district, Cviiceva ul., 91.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION FORM -->
+<section class="section-form py-5">
+    <div class="container">
+        <h1 class="text-center mb-4 text-white">Contact Us</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form class="contact-form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label text-white">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label text-white">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Your email"
+                               required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="find-us" class="form-label text-white">What area is your project in?</label>
+                        <select class="form-select" id="find-us" name="find-us">
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="html5">Event Design</option>
+                            <option value="css3">Web Design</option>
+                            <option value="js">Videography</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter" checked>
+                        <label class="form-check-label text-white" for="newsletter">Sign up for newsletter</label>
+                    </div>
+                    <div class="mb-3">
+                        <label for="comments" class="form-label text-white">Comments</label>
+                        <textarea class="form-control" id="comments" name="comments" rows="5"
+                                  placeholder="Your comments"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send away</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-6 mb-3 mb-md-0">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a href="#" class="nav-link text-white">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Blog</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Media</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">App</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a href="#" class="nav-link text-white"><i
+                            class="fa-brands fa-square-facebook fa-2x"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white"><i
+                            class="fa-brands fa-square-x-twitter fa-2x"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white"><i
+                            class="fa-brands fa-square-instagram fa-2x"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white"><i
+                            class="fa-brands fa-tiktok fa-2x"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="mt-3">PC Studio 2025</p>
+    </div>
+</footer>
+
+</body>
+</html>
